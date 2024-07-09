@@ -37,3 +37,42 @@ python script.py <nmap_file>
 To process a all `.nmap` files in a directory:
 ```bash
 python script.py <path to directory>
+
+# NmapImageToWord
+
+NmapImageToWord is a Python script that reads `.nmap` files, paginates the content, saves each page as a cropped image file, and then imports these images into a Microsoft Word document. The script can handle single `.nmap` files or all `.nmap` files in a specified directory. It arranges the images and captions in the Word document.
+
+## Features
+
+- Processes single `.nmap` files or all `.nmap` files in a specified directory.
+- Paginates the content and saves each page as a cropped JPEG image.
+- Automatically adjusts the number of lines per page to fill the image.
+- Saves image files with leading zeros in filenames to ensure correct sorting.
+- Imports the images into a Word document.
+- Centers images and captions, and styles captions in Calibri, 9 points.
+
+## Requirements
+
+- Python 3.x
+- Pillow
+- python-docx
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/NmapImageToWord.git
+    cd NmapImageToWord
+    ```
+
+2. Install the required packages:
+    ```bash
+    pip install pillow python-docx
+    ```
+
+## Usage
+
+To process a single `.nmap` file:
+```bash
+python script.py <nmap_file>
+
