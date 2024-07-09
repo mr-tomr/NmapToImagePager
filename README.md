@@ -31,26 +31,25 @@ NmapToImagePager is a Python script that reads `.nmap` files, paginates the cont
 
 To process a single `.nmap` file:
 ```bash
-python script.py <nmap_file>
+python NmapToImagePager.py <nmap_file>
 ```
 
 To process a all `.nmap` files in a directory:
 ```bash
-python script.py <path to directory>
+python NmapToImagePager.py <path to directory>
 ```
 
 # NmapImageToWord
 
-NmapImageToWord is a Python script that reads `.nmap` files, paginates the content, saves each page as a cropped image file, and then imports these images into a Microsoft Word document. The script can handle single `.nmap` files or all `.nmap` files in a specified directory. It arranges the images and captions in the Word document.
+NmapImageToWord is a Python script that takes all images in a specified folder (typically created by `NmapToImagePager.py`), imports them into a Microsoft Word document, and arranges the images and captions within the document.
 
 ## Features
 
-- Processes single `.nmap` files or all `.nmap` files in a specified directory.
-- Paginates the content and saves each page as a cropped JPEG image.
-- Automatically adjusts the number of lines per page to fill the image.
-- Saves image files with leading zeros in filenames to ensure correct sorting.
+- Processes all images in a specified folder.
 - Imports the images into a Word document.
 - Centers images and captions, and styles captions in Calibri, 9 points.
+- Captions each image with its filename.
+- If no output filename is provided, the folder name will be used as the filename for the Word document.
 
 ## Requirements
 
@@ -73,7 +72,7 @@ NmapImageToWord is a Python script that reads `.nmap` files, paginates the conte
 
 ## Usage
 
-To process a single `.nmap` file:
+To import all images from a folder into a Word document:
 ```bash
-python script.py <nmap_file>
-
+python NmapImagesToWord.py <image_folder> [output_filename]
+```
