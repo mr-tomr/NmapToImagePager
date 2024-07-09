@@ -37,6 +37,7 @@ python script.py <nmap_file>
 To process a all `.nmap` files in a directory:
 ```bash
 python script.py <path to directory>
+```
 
 # NmapImageToWord
 
