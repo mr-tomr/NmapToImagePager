@@ -1,4 +1,4 @@
-# NmapToImagePager
+# NmapToImagePager.py
 
 NmapToImagePager is a Python script that reads `.nmap` files, paginates the content, and saves each page as a cropped image file. This tool is useful for visualizing large Nmap scan results, making them easier to review and share.
 
@@ -39,7 +39,9 @@ To process a all `.nmap` files in a directory:
 python NmapToImagePager.py <path to directory>
 ```
 
-# NmapImageToWord
+
+    
+# NmapImageToWord.py
 
 NmapImageToWord is a Python script that takes all images in a specified folder (typically created by `NmapToImagePager.py`), imports them into a Microsoft Word document, and arranges the images and captions within the document.
 
