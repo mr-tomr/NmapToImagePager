@@ -32,6 +32,7 @@ NmapToImagePager is a Python script that reads `.nmap` files, paginates the cont
 To process a single `.nmap` file:
 ```bash
 python script.py <nmap_file>
+```
 
 To process a all `.nmap` files in a directory:
 ```bash
