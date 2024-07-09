@@ -40,7 +40,7 @@ python NmapToImagePager.py <path to directory>
 ```
 
 <br><br>   
-# NmapImageToWord.py
+# NmapImagesToWord.py
 
 NmapImageToWord is a Python script that takes all images in a specified folder (typically created by `NmapToImagePager.py`), imports them into a Microsoft Word document, and arranges the images and captions within the document.
 
