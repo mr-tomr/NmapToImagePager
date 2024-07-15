@@ -47,7 +47,7 @@ def save_page_to_image(page_content, folder, base_filename, page_number, image_w
     cropped_image = image.crop((0, 0, image_width, max_y + 10))
 
     # Save the image with leading zeros in the file name
-    filename = os.path.join(folder, f"{base_filename}_{page_number:02d}.jpg")
+    filename = os.path.join(folder, f"{base_filename}_{page_number:03d}.jpg")
     cropped_image.save(filename)
 
 def process_file(nmap_file):
