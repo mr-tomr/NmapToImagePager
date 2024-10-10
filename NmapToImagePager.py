@@ -32,8 +32,8 @@ def save_page_to_image(page_content, folder, base_filename, page_number, image_w
     except IOError:
         font = ImageFont.load_default()
 
-    # Calculate line height
-    line_height = font.getsize('A')[1]
+    # Calculate line height using getbbox instead of getsize
+    line_height = font.getbbox('A')[3] - font.getbbox('A')[1]
 
     # Draw the text onto the image
     y = 10
@@ -49,6 +49,7 @@ def save_page_to_image(page_content, folder, base_filename, page_number, image_w
     # Save the image with leading zeros in the file name
     filename = os.path.join(folder, f"{base_filename}_{page_number:03d}.jpg")
     cropped_image.save(filename)
+
 
 def process_file(nmap_file):
     """
