@@ -80,7 +80,23 @@ python NmapImagesToWord.py <image_folder> [output_filename]
 
 ## Running via link file
 
-You can place scripts that will invoke the VENV and run the command within the the /usr/local/bin directory.
+You can place scripts that will invoke the VENV and run the command within the the "/usr/local/bin" directory.  This allows you to run from any folder.
+
+
+NmapToImagePager.py
+
+```bash
+#!/bin/bash
+# Activate the virtual environment
+source /opt/nmappager/venv/bin/activate
+
+# Run the Python script
+python3 /opt/nmappager/nmaptoimagepager.py "$@"
+
+# Deactivate the virtual environment
+deactivate
+
+```
 
 NmapImagesToWord.py
 
@@ -92,21 +108,6 @@ source /opt/nmappager/venv/bin/activate
 
 # Run the Python script
 python3 /opt/nmappager/nmapimagestoword.py "$@"
-
-# Deactivate the virtual environment
-deactivate
-
-```
-
-NmapToImagePager.py
-
-```bash
-#!/bin/bash
-# Activate the virtual environment
-source /opt/nmappager/venv/bin/activate
-
-# Run the Python script
-python3 /opt/nmappager/nmaptoimagepager.py "$@"
 
 # Deactivate the virtual environment
 deactivate
