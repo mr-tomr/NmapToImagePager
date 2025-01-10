@@ -70,10 +70,45 @@ NmapImageToWord is a Python script that takes all images in a specified folder (
     ```bash
     pip install pillow python-docx
     ```
-
+  
 ## Usage
 
 To import all images from a folder into a Word document:
 ```bash
 python NmapImagesToWord.py <image_folder> [output_filename]
+```
+
+## Running via link file
+
+You can place scripts that will invoke the VENV and run the command within the the /usr/local/bin directory.
+
+NmapImagesToWord.py
+
+```bash
+#!/bin/bash
+
+# Activate the virtual environment
+source /opt/nmappager/venv/bin/activate
+
+# Run the Python script
+python3 /opt/nmappager/nmapimagestoword.py "$@"
+
+# Deactivate the virtual environment
+deactivate
+
+```
+
+NmapToImagePager.py
+
+```bash
+#!/bin/bash
+# Activate the virtual environment
+source /opt/nmappager/venv/bin/activate
+
+# Run the Python script
+python3 /opt/nmappager/nmaptoimagepager.py "$@"
+
+# Deactivate the virtual environment
+deactivate
+
 ```
