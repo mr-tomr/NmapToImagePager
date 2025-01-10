@@ -83,7 +83,7 @@ python NmapImagesToWord.py <image_folder> [output_filename]
 You can place scripts that will invoke the VENV and run the command within the the "/usr/local/bin" directory.  This allows you to run from any folder.
 
 
-NmapToImagePager.py
+NmapToImagePager
 
 ```bash
 #!/bin/bash
@@ -98,7 +98,7 @@ deactivate
 
 ```
 
-NmapImagesToWord.py
+NmapImagesToWord
 
 ```bash
 #!/bin/bash
