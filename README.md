@@ -18,7 +18,7 @@ NmapToImagePager is a Python script that reads `.nmap` files, paginates the cont
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/NmapToImagePager.git
+    git clone https://github.com/mr-tomr/NmapToImagePager.git
     cd NmapToImagePager
     ```
 
@@ -62,7 +62,7 @@ NmapImageToWord is a Python script that takes all images in a specified folder (
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/NmapImageToWord.git
+    git clone https://github.com/mr-tomr/NmapImageToWord.git
     cd NmapImageToWord
     ```
 
